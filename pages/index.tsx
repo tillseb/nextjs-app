@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import * as React from 'react';
 import { Inter } from 'next/font/google'
+import { Button } from '@nextui-org/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,7 +54,7 @@ export default function Home({ data }: { data: { time: string } }) {
           priority
         />
       </div>
-
+      <Button>Click me</Button>
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
